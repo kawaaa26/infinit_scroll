@@ -26,7 +26,11 @@
           <% end %>
         </tbody>
       </table>
-      <%= paginate @blogs %>
+      <div class="skill-list">
+        <%= link_to_prev_page @blogs, 'prev', class: "prev" %>
+        <%= link_to_next_page @blogs, 'next', class: "next" %>
+        <%#= paginate @blogs %>
+      </div>
     </div>
   </div>
 </div>
