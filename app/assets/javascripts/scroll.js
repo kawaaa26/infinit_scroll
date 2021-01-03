@@ -1,10 +1,10 @@
 $(document).on('turbolinks:load', function() {
   $('.jscroll').jscroll({
-    // 無限に追加する要素は、どこに入れる？
+    // adding infinit elements
     contentSelector: '.jscroll',
-    // 次のページにいくためのリンクの場所は？ ＞aタグの指定
+    // putting a link for next page
     nextSelector: 'a.next',
-    // 読み込み中の表示はどうする？
+    // loading msg
     loadingHtml: '読み込み中'
   });
 });
